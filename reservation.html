@@ -1,0 +1,99 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+	<title> 예약 </title>
+</head>
+
+<body onselectstart="return false">
+<br><br><br><br>
+
+<form name="reservation" action="finsh.html">
+<table align=center border=3 bordercolor=black bordercolorlight=gray cellspacing=0 cellpadding=2>
+<tr bgcolor=#ececec align=center>
+	<td colspan=2>예약하기</td>
+</tr>
+<tr>
+	<td bgcolor=#ececec align=center>예약자 성함</td>
+	<td>
+		<input type=text name=id size=12 maxlength=12>		
+	</td>
+</tr>
+
+<tr>
+	<td bgcolor=#ececec align=center>성별</td>
+	<td>
+		
+	<input type=radio name=sex value=1>남
+	<input type=radio name=sex value=2 checked>여
+		
+		
+	</td>
+</tr>
+
+
+<tr>
+	<td bgcolor=#ececec align=center>휴대폰</td>
+	<td>
+		
+	<select name=phone1>
+		<option value=1 SELECTED>010</option>
+		<option value=2>017</option>
+		<option value=3>011</option>
+		<option value=4>018</option>
+		<option value=5>019</option>
+	</select>
+
+	-
+	<input type=text name=phone2 size=4 maxlength=4>
+	-
+	<input type=text name=phone3 size=4 maxlength=4>
+	</td>
+</tr>
+
+<tr>
+	<td bgcolor=#ececec align=center>날짜</td>
+	<td>
+	<input type="date" name="date">
+	</td>
+</tr>
+
+<tr>
+	<td bgcolor=#ececec align=center>시간</td>
+	<td>
+	<input type="time" name="time" min="09:00" max="21:30">
+	</td>
+</tr>
+
+<tr>
+	<td bgcolor=#ececec align=center>머리스타일</td>
+	<td>
+		
+	<input type=checkbox name=style1 value=1 checked>커트
+	<input type=checkbox name=style2 value=2>펌
+	<input type=checkbox name=style3 value=3>염색
+	<input type=checkbox name=style4 value=4>클리닉
+	<input type=checkbox name=style5 value=5>드라이
+
+	</td>
+</tr>
+<tr>
+	<td bgcolor=#ececec align=center>요청사항</td>
+	<td>
+		<textarea cols=50 rows=5 name=memo>
+요청사항을 작성하세요
+				</textarea>	
+	</td>
+</tr>
+
+<tr>
+	<td bgcolor=#ececec colspan=2 align=center>
+		<input type=submit value=예약하기>		
+		<input type=reset value=다시작성>		
+	</td>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>
